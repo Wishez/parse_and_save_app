@@ -1,0 +1,15 @@
+{
+  "name": "parse_and_save_app",
+  "version": "1.0.0",
+  "description": "The app is parsing data from HTML file and save it to the accordance file.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node server.js"
+  },
+  "author": "Filipp Zhuravlev",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3"
+  }
+}
