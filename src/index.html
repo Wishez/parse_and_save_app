@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="ie=edge" http-equiv="x-ua-compatible"/>
+        <title>
+            Parse and Save
+        </title>
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+        <!-- Place favicon.ico in the root directory -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
+        <link href="./css/normalize.css" rel="stylesheet"/>
+        <link href="./css/index.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+        <header class="parent direction_column">
+	        <h1 class="parent direction_row centered">
+	            "Parse and Save" Application
+	        </h1>
+	        <button id="runButton" class="self_centered button button_centered button_blue">Parse and Save</button>
+        </header><!-- /header -->
+        <main class="box box_centered parent direction_column shadow_white-material">
+            <h2 class="box__title">
+                Result
+            </h2>
+            <p id="result">
+				You'll see the result here.
+            </p>
+        </main>
+
+        <svg hidden
+        	height="40px" id="loader" style="enable-background:new 0 0 50 50;" version="1.1" viewbox="0 0 50 50" width="40px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+            <path d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z" fill="#000">
+                <animatetransform attributename="transform" attributetype="xml" dur="0.6s" from="0 25 25" repeatcount="indefinite" to="360 25 25" type="rotate">
+                </animatetransform>
+            </path>
+        </svg>
+        <script async defer crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="https://code.jquery.com/jquery-3.3.1.min.js">
+        </script>
+        <script async defer src="/libs/filer.min.js">
+        </script>
+
+        <script async defer src="./index.js">
+        </script>
+    </body>
+</html>
