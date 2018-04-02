@@ -4,21 +4,14 @@ module.exports = {
     browser: true,
     node: true
   },
-  parserOptions: {
-    parser: 'babel-eslint',
-    // sourceType: 'module',
+  "plugins": ["node"],
+  "extends": [
+    "eslint:recommended", 
+    "plugin:node/recommended"
+  ],
+  "rules": {
+      "node/exports-style": ["error", "module.exports"]
   },
-  extends: [
-    "eslint:recommended",
-    // https://github.com/vuejs/eslint-plugin-vue#priority-a-essential-error-prevention
-    // consider switching to `plugin:vue/strongly-recommended` or `plugin:vue/recommended` for stricter rules.
-    "plugin:vue/recommended",
-    "plugin:prettier/recommended"
-  ],
-  // required to lint *.vue files
-  plugins: [
-    'vue'
-  ],
   // add your custom rules here
   rules: {
   //  "no-undef": 1,

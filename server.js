@@ -1,9 +1,16 @@
 var express = require('express');
 var app = express();
 
-app.get('/', function (req, res) {
-   res.send('Hello World');
+app.use(express.static('src'));
+
+app.get('*', function (req, res) {
+   res.sendFile(__dirname + '/index.html');
+});
+
+app.get('/parse_and_save', function (req, res) {
+   res.end('Paes and Save.');
 })
+
 
 var server = app.listen(9001, function () {
    var host = server.address().address

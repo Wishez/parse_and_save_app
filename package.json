@@ -4,12 +4,22 @@
   "description": "The app is parsing data from HTML file and save it to the accordance file.",
   "main": "index.js",
   "scripts": {
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "parse": "node src/run.js",
+    "lint": "eslint --ext .js --ignore-path .gitignore .",
+    "lintfix": "eslint --fix --ext .js --ignore-path .gitignore .",
+    "precommit": "npm run lint"
   },
   "author": "Filipp Zhuravlev",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.2",
+    "cheerio": "^1.0.0-rc.2",
     "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-plugin-node": "^6.0.1",
+    "webpack": "^4.4.1"
   }
 }
